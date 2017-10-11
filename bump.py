@@ -43,6 +43,8 @@ if __name__ == "__main__":
 
     version_file = get_version_file() or create_version_file()
 
+    print "VERSION file path: %s" % version_file
+
     with open(version_file) as fp:
         current = get_version(fp.read())
         print "Current Version: %s" % current
